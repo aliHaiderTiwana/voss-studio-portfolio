@@ -1,0 +1,107 @@
+.hero {
+  padding-top: var(--space-7);
+  max-width: 760px;
+  /* Uncomment once you've added src/assets/hero-workshop.jpg and imported it
+     as a CSS custom property, or reference it directly below: */
+  /* background: linear-gradient(rgba(237,230,214,0.9), rgba(237,230,214,0.95)),
+                url('../assets/hero-workshop.jpg') center/cover; */
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-sage);
+  margin-bottom: var(--space-3);
+}
+
+.headline {
+  font-size: var(--size-3xl);
+  margin-bottom: var(--space-4);
+}
+
+.sub {
+  font-size: var(--size-lg);
+  color: var(--color-ink-soft);
+  max-width: 60ch;
+  margin-bottom: var(--space-5);
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.primaryCta,
+.secondaryCta {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 var(--space-5);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.primaryCta {
+  background: var(--color-walnut);
+  color: var(--color-oat-soft);
+}
+
+.primaryCta:hover {
+  background: var(--color-walnut-deep);
+}
+
+.secondaryCta {
+  border: 1px solid var(--color-walnut);
+  color: var(--color-walnut-deep);
+}
+
+.secondaryCta:hover {
+  background: rgba(62, 42, 30, 0.06);
+}
+
+.sectionTitle {
+  font-size: var(--size-2xl);
+  margin-bottom: var(--space-5);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+.intro {
+  max-width: 640px;
+  padding-bottom: var(--space-6);
+}
+
+.introText {
+  color: var(--color-ink-soft);
+  margin-bottom: var(--space-3);
+}
+
+.textLink {
+  color: var(--color-walnut-deep);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-brass);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .headline {
+    font-size: var(--size-2xl);
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
