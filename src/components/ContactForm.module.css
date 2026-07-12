@@ -1,0 +1,67 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 520px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.field label {
+  font-family: var(--font-mono);
+  font-size: var(--size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-ink-soft);
+}
+
+.field input,
+.field select,
+.field textarea {
+  font-family: var(--font-body);
+  font-size: var(--size-base);
+  padding: var(--space-3);
+  border: 1px solid rgba(62, 42, 30, 0.25);
+  border-radius: var(--radius-sm);
+  background: var(--color-oat-soft);
+  color: var(--color-ink);
+}
+
+.field input[aria-invalid='true'],
+.field textarea[aria-invalid='true'] {
+  border-color: #b04a3a;
+}
+
+.error {
+  font-size: var(--size-xs);
+  color: #b04a3a;
+}
+
+.submit {
+  align-self: flex-start;
+  background: var(--color-walnut);
+  color: var(--color-oat-soft);
+  border: none;
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-sm);
+  font-size: var(--size-sm);
+  font-weight: 500;
+  cursor: pointer;
+  min-height: 44px;
+  transition: background 0.15s ease;
+}
+
+.submit:hover {
+  background: var(--color-walnut-deep);
+}
+
+.confirmation {
+  font-family: var(--font-display);
+  font-size: var(--size-lg);
+  color: var(--color-sage);
+  max-width: 480px;
+}

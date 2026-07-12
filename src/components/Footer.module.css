@@ -1,0 +1,30 @@
+.footer {
+  border-top: 1px solid rgba(62, 42, 30, 0.15);
+  margin-top: var(--space-7);
+  padding: var(--space-5) 0;
+  font-family: var(--font-mono);
+  font-size: var(--size-xs);
+  color: var(--color-ink-soft);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--color-walnut);
+}
+
+.links a:hover {
+  color: var(--color-brass);
+}
